@@ -76,8 +76,8 @@ cls
 
 echo Verifying
 echo [▓▓▓▓▓▓▓▓▓▓]
-timeout /t 3 >nul
 echo qwix.startapp.register.minecity_installer.fin>>"%localappdata%\Temp\qwix.minecity\detect_fin.mci"
+timeout /t 3 >nul
 cls
 del "%localappdata%\Temp\qwix.minecity\detect_start.mci" /F /S /Q
 del "%localappdata%\Temp\qwix.minecity\detect_dload.mci" /F /S /Q
