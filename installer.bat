@@ -28,6 +28,8 @@ ping github.com >nul
 if %ERRORLEVEL% == 1 (echo ERROR: Could not reach Update Server. Check Firewall, Blacklist or Connection? & goto :eof) else (echo Connection Established)
 mkdir %localappdata%\Temp\qwix.minecity >nul
 
+rmdir "%localappdata%\Minecity\app"
+
 del "%localappdata%\Temp\qwix.minecity\detect_start.mci" /F /S /Q
 del "%localappdata%\Temp\qwix.minecity\detect_dload.mci" /F /S /Q
 del "%localappdata%\Temp\qwix.minecity\detect_ext.mci" /F /S /Q
